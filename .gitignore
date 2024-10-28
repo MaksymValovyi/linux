@@ -1,4 +1,5 @@
 .autojump/
+.config/obs-studio
 max/
 .Xauthority
 *.tmp

@@ -1,0 +1,26 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 659,
+       "width": 816,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "Terminal",
+    "percent": 1,
+    "swallows": [
+       {
+       // "class": "^Gnome\\-terminal$",
+       // "instance": "^gnome\\-terminal\\-server$",
+       // "machine": "^MaxPC$",
+       // "title": "^Terminal$",
+       // "window_role": "^gnome\\-terminal\\-window\\-4877b20a\\-68b0\\-4fad\\-b933\\-a1a22f3d76fa$"
+       }
+    ],
+    "type": "con"
+}
+

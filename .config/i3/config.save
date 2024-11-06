@@ -212,12 +212,7 @@ bar {
 #append_layout ~/.config/i3/workspace-1.json
 #append_layout ~/.config/i3/workspace-2.json
 #exec  "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-1.json'"
-exec  "i3-msg 'workspace 1; exec firefox'"
 exec  "i3-msg 'workspace 2; exec gnome-terminal'"
-exec  "i3-msg 'workspace 3; exec flatpak run --command=telegram-desktop org.telegram.desktop -autostart'"
-exec  "i3-msg 'workspace 4; exec code'"
-exec  "i3-msg 'workspace 5; exec thunderbird'"
 
 #language
 #switch language with ctrl+shift
-exec --no-startup-id "setxkbmap -layout "eng,ru" -option "grp:ctrl_shift_toggle""

@@ -100,6 +100,7 @@ alias anwendungsProg="source /usr/local/bin/anwendungsProg"
 alias pwdc="pwd | xsel --clipboard --input"
 alias kryptographie="source /usr/local/bin/kryptographie"
 alias vim='nvim'
+alias suspend='systemctl suspend'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

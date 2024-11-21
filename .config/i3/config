@@ -144,6 +144,7 @@ bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
 bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
@@ -211,16 +212,17 @@ bar {
 #save and start saved layout
 exec  --no-startup-id "i3-msg 'workspace 1; exec firefox'"
 exec  --no-startup-id "i3-msg 'workspace 2; exec gnome-terminal'"
-exec  --no-startup-id "i3-msg 'workspace 3; exec gnome-terminal'"
-exec  --no-startup-id "i3-msg 'workspace 4; exec gnome-terminal'"
-exec  --no-startup-id "sleep 0.5 && i3-msg 'workspace 5; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u %u @@'"
-exec  --no-startup-id "i3-msg 'workspace 6; exec thunderbird'"
-exec  --no-startup-id "sleep 1 && i3-msg 'workspace 7; exec spotify'"
-exec  --no-startup-id "sleep 2 && i3-msg 'workspace 8; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord'"
+#exec  --no-startup-id "i3-msg 'workspace 3; exec gnome-terminal'"
+#exec  --no-startup-id "i3-msg 'workspace 4; exec gnome-terminal'"
+exec  --no-startup-id "sleep 1 && i3-msg 'workspace 5; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u %u @@'"
+exec  --no-startup-id "sleep 2 && i3-msg 'workspace 6; exec thunderbird'"
+exec  --no-startup-id "sleep 3 && i3-msg 'workspace 7; exec spotify'"
+exec  --no-startup-id "sleep 4 && i3-msg 'workspace 8; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord'"
 
 # Start on workspace 1
-exec --no-startup-id "sleep 4 && i3-msg 'workspace 1'"
+exec --no-startup-id "sleep 5 && i3-msg 'workspace 1'"
 
 # Move the current workspace to the next output
 # (effectively toggles when you only have two outputs)
 bindsym $mod+x move workspace to output next
+

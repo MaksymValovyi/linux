@@ -226,3 +226,5 @@ exec --no-startup-id "sleep 5 && i3-msg 'workspace 1'"
 # (effectively toggles when you only have two outputs)
 bindsym $mod+x move workspace to output next
 
+#background
+exec --no-startup-id feh --bg-scale /home/small_f00t/max/images/kFzDcVwJ.png

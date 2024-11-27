@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image=/home/small_f00t/max/images/AnimeMint2Screen.png --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -209,22 +209,38 @@ bar {
         status_command i3status
 }
 
+bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/AnimeMint2Screen.png
+
 #save and start saved layout
-exec  --no-startup-id "i3-msg 'workspace 1; exec firefox'"
-exec  --no-startup-id "i3-msg 'workspace 2; exec gnome-terminal'"
-#exec  --no-startup-id "i3-msg 'workspace 3; exec gnome-terminal'"
-#exec  --no-startup-id "i3-msg 'workspace 4; exec gnome-terminal'"
-exec  --no-startup-id "sleep 1 && i3-msg 'workspace 5; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u %u @@'"
-exec  --no-startup-id "sleep 2 && i3-msg 'workspace 6; exec thunderbird'"
-exec  --no-startup-id "sleep 3 && i3-msg 'workspace 7; exec spotify'"
-exec  --no-startup-id "sleep 4 && i3-msg 'workspace 8; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord'"
+exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec firefox'"
+exec  --no-startup-id "sleep 2 && i3-msg 'workspace 2; exec gnome-terminal'"
+#exec  --no-startup-id "sleep 2 && i3-msg 'workspace 5; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u %u @@'"
+exec  --no-startup-id "sleep 3 && i3-msg 'workspace 6; exec thunderbird'"
+#exec  --no-startup-id "sleep 4 && i3-msg 'workspace 7; exec spotify'"
+#exec  --no-startup-id "sleep 6 && i3-msg 'workspace 8; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord'"
 
 # Start on workspace 1
-exec --no-startup-id "sleep 5 && i3-msg 'workspace 1'"
+#exec --no-startup-id "sleep 5 && i3-msg 'workspace 1'"
 
 # Move the current workspace to the next output
 # (effectively toggles when you only have two outputs)
 bindsym $mod+x move workspace to output next
 
 #background
-exec --no-startup-id feh --bg-scale /home/small_f00t/max/images/kFzDcVwJ.png
+exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/kFzDcVwJ.png"
+#exec_always --no-startup-id killall back4.sh
+#exec_always --no-startup-id back4.sh 0.010 /home/small_f00t/max/images/ub_7Q2.gif
+
+# ----------------------------------------------------------------------------------------------------------------
+# Add this to your i3 config to take a screenshot (selection) and save it to the clipboard just by pressing PrtSc!
+# The resulting file will have this format: screenshot_02-Dec-2021_13-24-21.png
+#
+# NOTE: This assumes you have a directory ~/screenshots and you have installed:
+#   - maim
+#   - xclip
+# ----------------------------------------------------------------------------------------------------------------
+
+# screenshot (saves to clipboard and a file in ~/screenshots)
+# key: PrtSc
+bindsym Print exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select > ~/screenshots/screenshot_$NOW.png && xclip -selection clip -t image/png ~/screenshots/screenshot_$NOW.png
+

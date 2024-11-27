@@ -96,6 +96,7 @@ alias l='ls -CF'
 #My own aliases
 alias studgit="source /usr/local/bin/studgit"
 alias cl='clear'
+alias cln='clear && neofetch'
 alias anwendungsProg="source /usr/local/bin/anwendungsProg"
 alias pwdc="pwd | xsel --clipboard --input"
 alias kryptographie="source /usr/local/bin/kryptographie"

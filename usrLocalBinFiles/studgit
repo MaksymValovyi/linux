@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /home/small_f00t/max/hsw/hiwi/StudentAssistant-MV
+git status
+

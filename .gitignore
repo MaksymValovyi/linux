@@ -97,3 +97,10 @@ posh-themes
 .config/GIMP/
 .config/GitHub Desktop/
 .config/gtk-2.0/
+.config/audacity/
+.m2/
+.openjfx/
+.scenebuilder/
+JavaFX/
+.config/wireshark/
+.cofig/audacity/

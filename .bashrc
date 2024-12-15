@@ -99,6 +99,7 @@ alias cl='clear'
 alias cln='clear && neofetch'
 alias anwendungsProg="source /usr/local/bin/anwendungsProg"
 alias pwdc="pwd | xsel --clipboard --input"
+alias back='feh --bg-scale /home/small_f00t/max/images/kFzDcVwJ.png'
 alias kryptographie="source /usr/local/bin/kryptographie"
 alias vim='nvim'
 alias suspend='systemctl suspend'
@@ -141,3 +142,5 @@ neofetch
 	
 #OH_MY_POSH
 eval "$(oh-my-posh init bash)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

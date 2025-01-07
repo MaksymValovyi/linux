@@ -1,9 +1,18 @@
 local lsp = require('lsp-zero')
+--local vim = require('vim')
+
+--
+vim.diagnostic.config({
+	signs = false
+})
+
 
 lsp.preset('recommended')
 
 lsp.ensure_installed({
 	'lua_ls',
+	'pylsp',
+	'ast_grep', -- for js
 })
 
 local cmp = require ('cmp')

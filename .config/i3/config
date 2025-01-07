@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image=/home/small_f00t/max/images/AnimeMint2Screen.png --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image=/home/small_f00t/max/images/emoji-emoji-disintegrating.png --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -209,12 +209,12 @@ bar {
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
 
 	# show bar on windows key
-	mode hide 
+	#mode hide
 	hidden_state hide
 	modifier Mod4
 
 	#position 
-	position top 
+	position bottom 
 
 	#workspace_buttons
 	#workspace_buttons yes
@@ -235,7 +235,7 @@ bar {
 	}
 }
 
-bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/AnimeMint2Screen.png
+bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/emoji-emoji-disintegrating.png
 
 #save and start saved layout
 exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec firefox'"

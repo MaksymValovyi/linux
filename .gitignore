@@ -104,3 +104,12 @@ posh-themes
 JavaFX/
 .config/wireshark/
 .cofig/audacity/
+
+#07.01.2025
+.fonts/
+.pgadmin3
+.psql_history
+.config/pgadmin/
+.config/pgadmin4/
+.config/Unknown Organization/
+.config/Insomnia/

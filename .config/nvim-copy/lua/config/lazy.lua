@@ -23,9 +23,6 @@ vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup({
-	rainbow = {
-		enable = false,
-	},
 	spec = {
 		-- import your plugins
 		{ import = "plugins" },
@@ -35,26 +32,4 @@ require("lazy").setup({
 	install = { colorscheme = { "habamax" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
-	},
-	{
-		{
-			'cameron-wags/rainbow_csv.nvim',
-			config = true,
-			ft = {
-				'csv',
-				'tsv',
-				'csv_semicolon',
-				'csv_whitespace',
-				'csv_pipe',
-				'rfc_csv',
-				'rfc_semicolon'
-			},
-			cmd = {
-				'RainbowDelim',
-				'RainbowDelimSimple',
-				'RainbowDelimQuoted',
-				'RainbowMultiDelim'
-			}
-		},
-	}
-)
+})

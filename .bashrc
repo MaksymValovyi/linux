@@ -99,10 +99,11 @@ alias cl='clear'
 alias cln='clear && neofetch'
 alias anwendungsProg="source /usr/local/bin/anwendungsProg"
 alias pwdc="pwd | xsel --clipboard --input"
-alias back='feh --bg-scale /home/small_f00t/max/images/kFzDcVwJ.png'
+alias back='feh --bg-scale /home/small_f00t/max/images/cyberpunk.jpg'
 alias kryptographie="source /usr/local/bin/kryptographie"
 alias vim='nvim'
 alias suspend='systemctl suspend'
+alias copy='fc -ln -1 | xsel --clipboard'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

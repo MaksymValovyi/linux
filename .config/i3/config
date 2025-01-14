@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image=/home/small_f00t/max/images/emoji-emoji-disintegrating.png --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image=/home/small_f00t/max/images/AnimeMint2Screen.png --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -235,7 +235,7 @@ bar {
 	}
 }
 
-bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/emoji-emoji-disintegrating.png
+bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/AnimeMint2Screen.png
 
 #save and start saved layout
 exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec firefox'"
@@ -253,7 +253,7 @@ exec  --no-startup-id "sleep 3 && i3-msg 'workspace 6; exec thunderbird'"
 bindsym $mod+x move workspace to output next
 
 #background
-exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/kFzDcVwJ.png"
+exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/dark-cyberpunk-c5vnd5k864da6cx2.jpg"
 #exec_always --no-startup-id killall back4.sh
 #exec_always --no-startup-id back4.sh 0.010 /home/small_f00t/max/images/ub_7Q2.gif
 

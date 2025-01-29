@@ -64,3 +64,7 @@ Add the following line to the i3 config file
 ```bash
 exec --no-startup-id feh --bg-scale /path/to/wallpaper.jpg
 ```
+
+## Firefox tabs show fullschreen
+
+[Link](https://superuser.com/questions/43964/firefox-always-show-the-tabs-in-fullscreen-mode)

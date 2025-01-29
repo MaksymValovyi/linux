@@ -1,7 +1,13 @@
 return{
 	{
 		"neovim/nvim-lspconfig",
+		dependencies = {
+			"williamboman/mason.nvim",
+		},
 		config=function()
+			local mason = require("mason")
+			mason.setup()
+
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup{}
 			-- Python (using pyright)

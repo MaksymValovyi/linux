@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image=/home/small_f00t/max/images/AnimeMint2Screen.png --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image=/home/small_f00t/max/images/dark_skull2Screen.png --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -40,6 +40,11 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# Media player controls
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -235,10 +240,11 @@ bar {
 	}
 }
 
-bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/AnimeMint2Screen.png
+#only .png files
+bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/dark_skull2Screen.png
 
 #save and start saved layout
-exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec firefox'"
+exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec firefox;'"
 exec  --no-startup-id "sleep 2 && i3-msg 'workspace 2; exec gnome-terminal'"
 #exec  --no-startup-id "sleep 2 && i3-msg 'workspace 5; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u %u @@'"
 exec  --no-startup-id "sleep 3 && i3-msg 'workspace 6; exec thunderbird'"
@@ -253,7 +259,7 @@ exec  --no-startup-id "sleep 3 && i3-msg 'workspace 6; exec thunderbird'"
 bindsym $mod+x move workspace to output next
 
 #background
-exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/dark-cyberpunk-c5vnd5k864da6cx2.jpg"
+exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/dark_skull-1920-1200.png"
 #exec_always --no-startup-id killall back4.sh
 #exec_always --no-startup-id back4.sh 0.010 /home/small_f00t/max/images/ub_7Q2.gif
 

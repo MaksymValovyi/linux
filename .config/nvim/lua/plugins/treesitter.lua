@@ -32,10 +32,10 @@ return {
 			"xml",
 			"yaml",
 		}, -- Add more languages if needed
-		auto_install = false,
+		auto_install = true,
                 highlight = {
                     enable = true, -- Enable Tree-sitter highlighting
-		    disable = {"csv"},
+		    disable = {"csv, c"},
                 },
                 indent = {
                     enable = true, -- Enable Tree-sitter based indentation

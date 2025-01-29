@@ -68,3 +68,7 @@ exec --no-startup-id feh --bg-scale /path/to/wallpaper.jpg
 ## Firefox tabs show fullschreen
 
 [Link](https://superuser.com/questions/43964/firefox-always-show-the-tabs-in-fullscreen-mode)
+
+## Custom cursor
+
+[Instructions link](https://www.reddit.com/r/linuxmint/comments/kadvq8/how_do_you_get_new_mouse_pointers/)

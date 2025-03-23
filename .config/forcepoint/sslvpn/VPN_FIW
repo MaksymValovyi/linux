@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE quicksec PUBLIC "quicksec:dtd" "quicksec.dtd">
+<quicksec>
+  <security-checks>
+    <antivirus enabled="0"/>
+    <firewall enabled="0"/>
+    <windows-update enabled="0"/>
+  </security-checks>
+  <params>
+    <externalkey init-info="" type="software"/>
+    <ca file="ipsecca202302070833132682003662299.ca" flags="no-crl">MIIDCzCCAfOgAwIBAgIBATANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDDCRTRyBSb290IENBIGZvciBHVyAoN2ZlZWNlZDM5ZTM2MDgwMCkwHhcNMjMwMjA3MDgzMzEzWhcNMzMwMjA2MDgzMzEzWjAvMS0wKwYDVQQDDCRTRyBSb290IENBIGZvciBHVyAoN2ZlZWNlZDM5ZTM2MDgwMCkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCwyr8o4FbQ2BpBAZwDquSRb3xzADxzpINW9oscplXzXQL5/zhz9E0pR6j3UyRJXHwMYWsM6+Fo9tX2bhU+mujXg+WkFs/HtB4v43Vmx7x+01bFdBisr0GFVJNs4JU41t5bCFf9Q5VujSHshIh3Dq127kRULQKH3jyTTxdhZRkJmgeyUD9FmZDihbnxNMmdFUfMGELTiOz5bKoLnqCOhlBt/hgSOlupV3hRlgPzDUNDYZDMwAgtkAI6U13iUk5a0lZrUaZH3XDKJ4e8HK2NCvdPyfMMGjRoU+OMKBP8joQpGVB48AABnNR9cgQy1E1QHMDVkgkcfVJK5W8P69mEKrmlAgMBAAGjMjAwMB0GA1UdDgQWBBQX9ZmaZUM51EnmBUOzGVif6XdnrTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBZGMC+RQinRfcFEaQjYIpIZUMfqIp01UyQRlHz+mdW7kxcD8085Fjh9XBntwOs/TTblIOmZoZ9fsfzPFXRY7Qenq3L2rauua7D24KrAEssxQk3kua+qj2YVQO33EzfnM/GlOX0369ky+USPbCAi82QXZFwh9djd21lieai46C/rVIIXfFbCH7Go4bLEZ6u8eOgPbz8LTruz8sAR67uwwnROic8Iw5ulnEuWUlbYLfbi/CpZbRBzdAcXtdItraLetcjlUJ3hJnxpO46QdybHuyql7uOZC5o2Vj10tyHQ+fH2jIVUTF7vCnOYiWQC8JsM3OeuvSJnhReCuvg3lyeyNIl</ca>
+    <ca file="ipsecca202408280724239271846378816.ca" flags="no-crl">MIICBzCCAWigAwIBAgIBATAKBggqhkjOPQQDBDAvMS0wKwYDVQQDDCRTRyBSb290IENBIGZvciBHVyAoNzA0MTI5M2UwN2FmYzQwMCkwHhcNMjQwODI4MTcyNDIzWhcNMzQwODI4MTcyNDIzWjAvMS0wKwYDVQQDDCRTRyBSb290IENBIGZvciBHVyAoNzA0MTI5M2UwN2FmYzQwMCkwgZswEAYHKoZIzj0CAQYFK4EEACMDgYYABADkxTZVlkL+FA02EaOr3mlUXjIJzlv4UUjMJ0+Y94GF5XOdAccaaowLpD/o4w1hT3IulYD1UV8BpDKK5sp63hvJMABcupMId+Ghfok1v6Alt2pbxTvt4LigKPqvTcVE4XVK8gSMfbYFY8qI5jEdmiGu3db+a/SILPXkhgWl/QQOo2EQbqMyMDAwHQYDVR0OBBYEFND0AKUOHj35eHuHs4ndWk5N7TCQMA8GA1UdEwEB/wQFMAMBAf8wCgYIKoZIzj0EAwQDgYwAMIGIAkIBruBZvMFsTz7vz9B0F3NbMlxB6jE9iXvz8kqvuPX2rbNkOyGSR2KTJIa1WWu2QACkYCnymP+QaTnr9GJgdJWqx3YCQgG2bnOCXSxhN+9xXceUftYBkPTPsekE2eBBkCiQ8+1067pBeWCcZO5RSuH27hk/Yo96uoz/RphiXEHcjeHl3Jjk6Q==</ca>
+    <ca file="ipsecca2024091003002687363639271.ca" flags="no-crl">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</ca>
+    <ca file="ipsecca202408280725233922086678771.ca" flags="no-crl">MIIG5TCCBM2gAwIBAgIRANpDvROb0li7TdYcrMTz2+AwDQYJKoZIhvcNAQEMBQAwgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTIwMDIxODAwMDAwMFoXDTMzMDUwMTIzNTk1OVowRDELMAkGA1UEBhMCTkwxGTAXBgNVBAoTEEdFQU5UIFZlcmVuaWdpbmcxGjAYBgNVBAMTEUdFQU5UIE9WIFJTQSBDQSA0MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApYhi1aEiPsg9ZKRMAw9Qr8Mthsr6R20VSfFeh7TgwtLQi6RSRLOh4or4EMG/1th8lijv7xnBMVZkTysFiPmTPiLOfvz+QwO1NwjvgY+Jrs7fSoVA/TQkXzcxu4Tl3WHi+qJmKLJVu/JOuHud6mOpLWkIbhODSzOxANJ24IGPx9h4OXDyy6/342eE6UPXCtJ8AzeumTG6Dfv5KVx24lCFTGUzHUB+j+g0lSKg/Sf1OzgCajJV9enmZ/84ydh48wPp6vbWf1H0O3Rd3LhpMSVnTqFTLKZSbQeLcx/l9DOKZfBCC9ghWxsgTqW9gQ7v3T3aIfSaVC9rnwVxO0VjmDdPFNbdoxnh0zYwf45nV1QQgpRwZJ93yWedhp4ch1a6Ajwqs+wv4mZzmBSjovtV0mKwd+CQbSToalEUP4QeJq4Udz5WNmNMI4OYP6cgrnlJ50aa0DZPlJqrKQPGL69KQQz12WgxvhCuVU70y6ZWAPopBa1ykbsttpLxADZre5cH573lIuLHdjx7NjpYIXRx2+QJURnX2qx37eZIxYXz8ggM+wXH6RDbU3V2o5DP67hXPHSAbA+p0orjAocpk2osxHKoNSE3LCjNx8WVdxnXvuQ28tKdaK69knfm3bB7xpdfsNNTPH9ElcjscWZxpeZ5Iij8lyrCG1z0vSWtSBsgSnUyG/sCAwEAAaOCAYswggGHMB8GA1UdIwQYMBaAFFN5v1qqK0rPVIDh2JvAnfKyA2bLMB0GA1UdDgQWBBRvHTVJEGwy+lmgnryK6B+VvnF6DDAOBgNVHQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwOAYDVR0gBDEwLzAtBgRVHSAAMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMFAGA1UdHwRJMEcwRaBDoEGGP2h0dHA6Ly9jcmwudXNlcnRydXN0LmNvbS9VU0VSVHJ1c3RSU0FDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNybDB2BggrBgEFBQcBAQRqMGgwPwYIKwYBBQUHMAKGM2h0dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9VU0VSVHJ1c3RSU0FBZGRUcnVzdENBLmNydDAlBggrBgEFBQcwAYYZaHR0cDovL29jc3AudXNlcnRydXN0LmNvbTANBgkqhkiG9w0BAQwFAAOCAgEAUtlC3e0xj/1BMfPhdQhUXeLjb0xp8UE28kzWE5xDzGKbfGgnrT2Rlw5gLIx+/cNVrad//+MrpTppMlxq59AsXYZW3xRasrvkjGfNR3vt/1RAl8iI31lGhIg6dfIX5N4esLkrQeN8HiyHKH6khm4966IkVVtnxz5CgUPqEYn4eQ+4eeESrWBhAqXaiv7HRvpsdwLYekAhnrlGpioZ/CJIT2PTTxf+GHM6cuUnNqdUzfvrQgA8kt1/ASXx2od/M+c8nlJqrGz29lrJveJOSEMX0c/ts02WhsfMhkYa6XujUZLmvR1Eq08r48/EZ4l+t5L4wt0DV8VaPbsEBF1EOFpz/YS2H6mSwcFaNJbnYqqJHIvm3PLJHkFmEoLXRVrQXdCT+3wgBfgU6heCV5CYBz/YkrdWES7tiiT8sVUDqXmVlTsbiRNiyLs2bmEWWFUl76jViIJog5fongEqN3jLIGTG/mXrJT1UyymIcobnIGrbwwRVz/mpFQo0vBYIi1k2ThVh0Dx88BbF9YiP84dd8Fkn5wbE6FxXYJ287qfRTgmhePecPc73YrztapdRcsKVGkOpaTIJP/l+lAHRLZxk/dUtyN95G++bOSQqnOCpVPabUGl2E/OEyFrpIpwgu2L/WJclvd6g+ZA/iWkLSMcpnFb+uX6QBqvD6+RNxul1FaB5iHY=</ca>
+    <ca file="ipsecca202409060240006141932595631.ca" flags="no-crl">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</ca>
+  </params>
+  <policy>
+    <tunnel name="VPN_FIW" flags="cfgmode xauth-methods" ike-life="86400" transform="esp aes-gcm">
+      <algorithm-properties algorithm="aes-gcm" default-key-size="128" max-key-size="256" min-key-size="128"/>
+      <sg-flags>ikev2</sg-flags>
+      <peer id="vpn.fiw.hs-wismar.de" id-type="fqdn">193.175.118.33</peer>
+      <ike-algorithms>aes sha2</ike-algorithms>
+      <ike-groups>14 16</ike-groups>
+      <ike-versions>1</ike-versions>
+      <pfs-groups>16</pfs-groups>
+      <life type="seconds">28800</life>
+      <life type="kbytes">0</life>
+    </tunnel>
+    <ssl-tunnel name="VPN_FIW">
+      <ssl-peer id="vpn.fiw.hs-wismar.de" id-type="fqdn" port="443">193.175.118.33</ssl-peer>
+      <cipher-suites>
+        <cipher-suite>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</cipher-suite>
+        <cipher-suite>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</cipher-suite>
+        <cipher-suite>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</cipher-suite>
+        <cipher-suite>TLS_DHE_RSA_WITH_AES_128_GCM_SHA256</cipher-suite>
+        <cipher-suite>TLS_DHE_RSA_WITH_AES_256_GCM_SHA384</cipher-suite>
+        <cipher-suite>TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</cipher-suite>
+      </cipher-suites>
+    </ssl-tunnel>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(193.175.118.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(192.76.157.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.24.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.23.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.14.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(188.210.44.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.32.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.104.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.25.128/25)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.7.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.18.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.31.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(193.16.175.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(62.80.5.0/30)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(195.74.94.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.20.231.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.16.0/23)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.25.0/25)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule to-tunnel="VPN_FIW">
+      <dst>ipv4(10.10.30.0/24)</dst>
+      <local-stack direction="from"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(193.175.118.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(192.76.157.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.24.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.23.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.14.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(188.210.44.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.32.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.104.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.25.128/25)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.7.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.18.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.31.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(193.16.175.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(62.80.5.0/30)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(195.74.94.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.20.231.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.16.0/23)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.25.0/25)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule from-tunnel="VPN_FIW">
+      <src>ipv4(10.10.30.0/24)</src>
+      <local-stack direction="to"/>
+    </rule>
+    <rule/>
+  </policy>
+</quicksec>

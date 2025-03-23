@@ -1,45 +1,52 @@
 return{
-	{
-		"neovim/nvim-lspconfig",
-		dependencies = {
-			"williamboman/mason.nvim",
+    {
+	"neovim/nvim-lspconfig",
+	dependencies = {
+	    'saghen/blink.cmp',
+	    "folke/lazydev.nvim",
+	    ft = "lua", -- only load on lua files
+	    opts = {
+		library = {
+		    -- See the configuration section for more details
+		    -- Load luvit types when the `vim.uv` word is found
+		    { path = "${3rd}/luv/library", words = { "vim%.uv" } },
 		},
-		config=function()
-			local mason = require("mason")
-			mason.setup()
+	    },
+	},
+	config = function()
+	    local capabilities = require('blink.cmp').get_lsp_capabilities()
+	    local lspconfig = require("lspconfig")
+	    local util = lspconfig.util
 
-			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup{}
-			-- Python (using pyright)
-			lspconfig.pyright.setup({})
-
-			-- Java (using jdtls)
-			lspconfig.jdtls.setup({})
-
-			-- JavaScript and TypeScript (using ts_ls)
-			lspconfig.ts_ls.setup({
-				settings = {
-					typescript = {
-						format = {
-							enable = true, -- Enable TypeScript formatting
-						},
-					},
-					javascript = {
-						format = {
-							enable = true, -- Enable JavaScript formatting
-						},
-					},
-				},
-				filetypes = {"javascript", "javascriptreact", "typescript", "typescriptreact" }, -- Include JSX/TSX
-			})
-			-- HTML (using html-language-server)
-			lspconfig.html.setup({})
-
-			-- CSS (using css-language-server)
-			lspconfig.cssls.setup({})
-
-			-- C++ and C (using clangd)
-			lspconfig.clangd.setup({})
+	    require("lspconfig").clangd.setup{ capabilities = capabilities }
+	    require("lspconfig").lua_ls.setup{
+		capabilities = capabilities,
+		root_dir = function(fname)
+		    -- Force the workspace to be the specified directory
+		    return "/home/smallf00t/max"
 		end,
-	}
+		settings = {
+		    Lua = {
+			workspace = {
+			    library = { "/home/smallf00t/max" },
+			    checkThirdParty = false,
+			},
+		    },
+		},
+
+	    }
+	    require("lspconfig").pylsp.setup{
+		settings = {
+		    pylsp = {
+			plugins = {
+			    pycodestyle = {
+				ignore = {'W391'},
+				maxLineLength = 100
+			    }
+			}
+		    }
+		}
+	    }
+	end,
+    }
 }

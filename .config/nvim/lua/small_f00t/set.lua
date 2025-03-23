@@ -7,3 +7,10 @@ vim.opt.scrolloff = 8
 
 --k
 vim.opt.colorcolumn = "80"
+
+vim.opt.shiftwidth = 4
+
+-- case sensitivity searching
+vim.opt.ignorecase = true
+
+

@@ -241,10 +241,11 @@ bar {
 }
 
 #only .png files
-bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/dark_skull2Screen.png
+bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/dark_skull.png
 
 #save and start saved layout
 exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec firefox;'"
+exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec screenkey;'"
 exec  --no-startup-id "sleep 2 && i3-msg 'workspace 2; exec gnome-terminal'"
 #exec  --no-startup-id "sleep 2 && i3-msg 'workspace 5; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u %u @@'"
 exec  --no-startup-id "sleep 3 && i3-msg 'workspace 6; exec thunderbird'"
@@ -259,7 +260,8 @@ exec  --no-startup-id "sleep 3 && i3-msg 'workspace 6; exec thunderbird'"
 bindsym $mod+x move workspace to output next
 
 #background
-exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/dark_skull-1920-1200.png"
+exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/black_lake.png"
+exec --no-startup-id "feh-blur -b 4"
 #exec_always --no-startup-id killall back4.sh
 #exec_always --no-startup-id back4.sh 0.010 /home/small_f00t/max/images/ub_7Q2.gif
 

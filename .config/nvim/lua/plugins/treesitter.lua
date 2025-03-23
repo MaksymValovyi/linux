@@ -1,47 +1,23 @@
 return {
-    -- other plugins
     {
-        "nvim-treesitter/nvim-treesitter",
-        build = ":TSUpdate",
-        config = function()
-            require("nvim-treesitter.configs").setup({
-                ensure_installed = {
-			"javascript",
-			"typescript",
-			"tsx",
-			"html",
-			"css",
-			"bash",
-			"c",
-			"diff",
-			"jsdoc",
-			"json",
-			"jsonc",
-			"lua",
-			"luadoc",
-			"luap",
-			"markdown",
-			"markdown_inline",
-			"printf",
-			"python",
-			"query",
-			"regex",
-			"toml",
-			"vim",
-			"vimdoc",
-			"xml",
-			"yaml",
-		}, -- Add more languages if needed
-		auto_install = true,
-                highlight = {
-                    enable = true, -- Enable Tree-sitter highlighting
-		    disable = {"csv, c"},
-                },
-                indent = {
-                    enable = true, -- Enable Tree-sitter based indentation
-                },
-            })
-        end,
-    },
+	"nvim-treesitter/nvim-treesitter", 
+	build = ":TSUpdate",
+	config = function()
+	    require'nvim-treesitter.configs'.setup {
+		ensure_installed = { "c", "gitignore", "python", "typescript" ,"lua", "vim", "vimdoc", "query", "markdown", "markdown_inline"},
+		auto_install = false,
+		highlight = {
+		    enable = true,
+		    disable = function(lang, buf)
+			local max_filesize = 100 * 1024 -- 100 KB
+			local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
+			if ok and stats and stats.size > max_filesize then
+			    return true
+			end
+		    end,
+		    additional_vim_regex_highlighting = true,
+		},
+	    }
+	end,
+    }
 }
-

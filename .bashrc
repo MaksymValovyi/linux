@@ -105,6 +105,8 @@ alias vim='nvim'
 alias suspend='systemctl suspend'
 alias copy='fc -ln -1 | xsel --clipboard'
 
+alias besys='sudo forcepoint-client vpn.fiw.hs-wismar.de --resolver /usr/bin/resolvectl'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -133,9 +135,11 @@ fi
 #PATH
 export PATH="~/:$PATH"
 export PATH="/home/small_f00t/.local/share/nvim:$PATH"
-export PATH="$PATH:/home/small_f00t/.local/bin"
 
-. ~/.bash_profile
+#cool theme
+export PATH=$PATH:/home/small_f00t/.local/bin
+POSH_THEME="darkblood"
+eval "$(oh-my-posh init bash --config /home/small_f00t/posh-themes/darkblood.omp.json)"
 neofetch
 
 #autojump
@@ -145,3 +149,7 @@ neofetch
 eval "$(oh-my-posh init bash)"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+#correct neovim
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+

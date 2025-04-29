@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image=/home/small_f00t/max/images/dark_skull2Screen.png --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image=/home/small_f00t/max/images/main_mint.png --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -67,6 +67,7 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+t exec --no-startup-id "rofi -modi drun,run -show drun"
 
 # change focus
 bindsym $mod+j focus left
@@ -241,9 +242,11 @@ bar {
 }
 
 #only .png files
-bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/dark_skull.png
+bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/dark_skull2Screen.png
+#bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/main_mint.png
 
 #save and start saved layout
+#exec  --no-startup-id "exec xrandr --output HDMI-A-0 --mode 1920x1080 --rate 144.00;'"
 exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec firefox;'"
 exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec screenkey;'"
 exec  --no-startup-id "sleep 2 && i3-msg 'workspace 2; exec gnome-terminal'"
@@ -260,7 +263,7 @@ exec  --no-startup-id "sleep 3 && i3-msg 'workspace 6; exec thunderbird'"
 bindsym $mod+x move workspace to output next
 
 #background
-exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/black_lake.png"
+exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/blue_back_green.png"
 exec --no-startup-id "feh-blur -b 4"
 #exec_always --no-startup-id killall back4.sh
 #exec_always --no-startup-id back4.sh 0.010 /home/small_f00t/max/images/ub_7Q2.gif

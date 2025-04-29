@@ -136,10 +136,12 @@ fi
 export PATH="~/:$PATH"
 export PATH="/home/small_f00t/.local/share/nvim:$PATH"
 
+
 #cool theme
 export PATH=$PATH:/home/small_f00t/.local/bin
 POSH_THEME="darkblood"
-eval "$(oh-my-posh init bash --config /home/small_f00t/posh-themes/darkblood.omp.json)"
+#eval "$(oh-my-posh init bash --config /home/small_f00t/posh-themes/darkblood.omp.json)"
+eval "$(oh-my-posh init bash --config /home/small_f00t/posh-themes/nordtron.omp.json)"
 neofetch
 
 #autojump
@@ -153,3 +155,5 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 #correct neovim
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
+#android-studio
+export PATH=$PATH:~/max/DELETE_THIS/android-studio/bin/

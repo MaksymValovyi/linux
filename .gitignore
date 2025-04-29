@@ -125,3 +125,19 @@ installator/
 .ssh/
 #tmux plugin github
 .tmux/plugins/tmux-resurrect/
+
+#29.04.2025
+.android/
+.config/Google/
+.config/Signal/
+.config/pavucontrol.ini
+.emulator_console_auth_token
+.gradle/
+.ipython/
+.jupyter/
+.packettracer
+Android/
+Videos/
+pt/
+.config/obs-studio
+.config/forcepoint

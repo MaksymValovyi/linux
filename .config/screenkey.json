@@ -8,7 +8,7 @@
     "persist": false,
     "window": null,
     "font_desc": "Sans 10",
-    "font_size": "large",
+    "font_size": "medium",
     "font_color": "white",
     "bg_color": "black",
     "opacity": 0.8,
@@ -20,10 +20,10 @@
     "vis_shift": false,
     "vis_space": true,
     "geometry": [
-        3424,
-        808,
-        389,
-        146
+        3449,
+        180,
+        345,
+        102
     ],
     "screen": 1,
     "start_disabled": false,

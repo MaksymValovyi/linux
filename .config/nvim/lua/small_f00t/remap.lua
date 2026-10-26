@@ -23,7 +23,7 @@ vim.keymap.set('n', 'gra', vim.lsp.buf.code_action)
 vim.keymap.set('n', 'grr', vim.lsp.buf.references)
 vim.keymap.set('i', '<C-s>', vim.lsp.buf.signature_help)
 --telescope go-to-definition
---vim.keymap.set('n', 'gd', require('telescope.builtin').lsp_definitions, { noremap = true, silent = true })
+-- vim.keymap.set('n', 'gd', require('telescope.builtin').lsp_definitions, { noremap = true, silent = true })
 --vim remap instead
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { noremap = true, silent = true })
 
@@ -46,3 +46,21 @@ vim.keymap.set("n", "<leader>st", function ()
 	vim.cmd.wincmd("J")
 	vim.api.nvim_win_set_height(0,10)
 end)
+
+-- warning message in small hover window
+vim.keymap.set("n", "<leader>w", vim.diagnostic.open_float)
+
+-- command for jq (json reformating)
+-- install jq before use
+
+vim.keymap.set("n", "<leader>js", ":%!jq '.'<CR>", { noremap = true, silent = true, desc = "Pretty-print JSON with jq" })
+-- xml parse
+-- install xq before use
+vim.keymap.set("n", "<leader>xs", ":%!xq<CR>", { noremap = true, silent = true, desc = "Pretty-print XML with xq" })
+
+-- maybe show error message
+vim.keymap.set('n', '<leader>er', vim.diagnostic.open_float)
+
+vim.keymap.set("n", "<leader>ru", function()
+    vim.fn.jobstart({ "love", vim.fn.expand("%:p:h") })
+end, { desc = "Run LÖVE game" })

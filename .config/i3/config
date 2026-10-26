@@ -9,15 +9,15 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod mod1
+set $mod mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+# font pango:monospace 6
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 8
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -70,10 +70,15 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+t exec --no-startup-id "rofi -modi drun,run -show drun"
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+# bindsym $mod+j focus left
+# bindsym $mod+k focus down
+# bindsym $mod+l focus up
+# bindsym $mod+semicolon focus right
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -82,10 +87,15 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+# bindsym $mod+Shift+j move left
+# bindsym $mod+Shift+k move down
+# bindsym $mod+Shift+l move up
+# bindsym $mod+Shift+semicolon move right
+
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -94,7 +104,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+g split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -211,6 +221,9 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 #------------------------------------------------------------------------------
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+
+default_border pixel 0
+
 bar {
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
 
@@ -247,11 +260,12 @@ bindsym $mod+Shift+x exec i3lock --image=/home/small_f00t/max/images/dark_skull2
 
 #save and start saved layout
 #exec  --no-startup-id "exec xrandr --output HDMI-A-0 --mode 1920x1080 --rate 144.00;'"
-exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec firefox;'"
-exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec screenkey;'"
+exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec zen;'"
+# exec  --no-startup-id "sleep 1 && i3-msg 'workspace 1; exec screenkey;'"
 exec  --no-startup-id "sleep 2 && i3-msg 'workspace 2; exec gnome-terminal'"
+exec  --no-startup-id "sleep 2 && i3-msg 'workspace 4; exec env APPIMAGELAUNCHER_DISABLE=TRUE \"/home/small_f00t/.joplin/Joplin.AppImage\"  %u'"
 #exec  --no-startup-id "sleep 2 && i3-msg 'workspace 5; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u %u @@'"
-exec  --no-startup-id "sleep 3 && i3-msg 'workspace 6; exec thunderbird'"
+# exec  --no-startup-id "sleep 3 && i3-msg 'workspace 6; exec thunderbird'"
 #exec  --no-startup-id "sleep 4 && i3-msg 'workspace 7; exec spotify'"
 #exec  --no-startup-id "sleep 6 && i3-msg 'workspace 8; exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord'"
 
@@ -263,7 +277,8 @@ exec  --no-startup-id "sleep 3 && i3-msg 'workspace 6; exec thunderbird'"
 bindsym $mod+x move workspace to output next
 
 #background
-exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/blue_back_green.png"
+# exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/blue_back_green.png"
+exec --no-startup-id "feh --bg-scale /home/small_f00t/max/images/xmas_2025.png"
 exec --no-startup-id "feh-blur -b 4"
 #exec_always --no-startup-id killall back4.sh
 #exec_always --no-startup-id back4.sh 0.010 /home/small_f00t/max/images/ub_7Q2.gif
@@ -284,3 +299,11 @@ bindsym Print exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select 
 #brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+# gaps around the windows
+gaps horizontal 15 px 
+gaps vertical 5 px 
+gaps inner 10 px 
+
+# hide edge borders
+hide_edge_borders smart

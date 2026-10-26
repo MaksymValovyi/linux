@@ -1,4 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+#  ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -96,7 +96,7 @@ alias l='ls -CF'
 #My own aliases
 alias studgit="source /usr/local/bin/studgit"
 alias cl='clear'
-alias cln='clear && neofetch'
+alias cln='clear && neofetch --ascii ~/max/images/goose_sonia.txt --ascii_colors 1 3 4 7'
 alias anwendungsProg="source /usr/local/bin/anwendungsProg"
 alias pwdc="pwd | xsel --clipboard --input"
 alias back='feh --bg-scale /home/small_f00t/max/images/normal.png'
@@ -133,22 +133,24 @@ fi
 
 
 #PATH
+export PATH="$HOME/bin:$PATH"
 export PATH="~/:$PATH"
 export PATH="/home/small_f00t/.local/share/nvim:$PATH"
 
 
 #cool theme
 export PATH=$PATH:/home/small_f00t/.local/bin
-POSH_THEME="darkblood"
-#eval "$(oh-my-posh init bash --config /home/small_f00t/posh-themes/darkblood.omp.json)"
+# POSH_THEME="darkblood"
+# eval "$(oh-my-posh init bash --config /home/small_f00t/posh-themes/darkblood.omp.json)"
 eval "$(oh-my-posh init bash --config /home/small_f00t/posh-themes/nordtron.omp.json)"
-neofetch
+# automatic on open neofetch 
+# neofetch --ascii ~/max/images/goose_sonia.txt --ascii_colors 1 3 4 7
 
 #autojump
 	[[ -s /home/small_f00t/.autojump/etc/profile.d/autojump.sh ]] && source /home/small_f00t/.autojump/etc/profile.d/autojump.sh
 	
 #OH_MY_POSH
-eval "$(oh-my-posh init bash)"
+# eval "$(oh-my-posh init bash)"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
@@ -157,3 +159,12 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 #android-studio
 export PATH=$PATH:~/max/DELETE_THIS/android-studio/bin/
+#flutter
+export PATH="$HOME/flutter/flutter/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#cargo
+export PATH="$HOME/.cargo/bin:$PATH"
